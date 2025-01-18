@@ -3,59 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Profile</title>
+    <title>Profil NFC</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             text-align: center;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            max-width: 600px;
+            width: 100%;
+            max-width: 400px;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        img {
-            border-radius: 50%;
+        .profile-photo {
             width: 150px;
             height: 150px;
+            border-radius: 50%;
             object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid #007BFF;
         }
-        h1, h2 {
+        .info {
             margin: 10px 0;
+            font-size: 18px;
         }
-        a {
-            display: inline-block;
-            margin: 10px 5px;
-            padding: 10px 15px;
-            color: #fff;
-            background: #007bff;
+        .info a {
+            color: #007BFF;
             text-decoration: none;
-            border-radius: 5px;
+            font-weight: bold;
         }
-        a:hover {
-            background: #0056b3;
+        .info a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            margin-right: 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="profile-picture.jpg" alt="Client Photo">
-        <h1>John Doe</h1>
-        <h2>+123 456 789</h2>
-        <div>
-            <a href="https://www.instagram.com/johndoe" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
-            <a href="tel:+123456789">Call</a>
-            <a href="mailto:johndoe@example.com">Email</a>
+        <img src="profile.jpg" alt="Photo de profil" class="profile-photo">
+        <div class="info">
+            <img src="icons/user.png" alt="Nom" class="icon">
+            <span>Nom Prénom</span>
         </div>
-        <div>
-            <a href="register-phone.html" target="_blank">Register My Number</a>
+        <div class="info">
+            <img src="icons/phone.png" alt="Téléphone" class="icon">
+            <a href="tel:+123456789">+123456789</a>
+        </div>
+        <div class="info">
+            <img src="icons/email.png" alt="Email" class="icon">
+            <a href="mailto:email@example.com">email@example.com</a>
+        </div>
+        <div class="info">
+            <img src="icons/instagram.png" alt="Instagram" class="icon">
+            <a href="https://instagram.com/username" target="_blank">@username</a>
+        </div>
+        <div class="info">
+            <img src="icons/link.png" alt="Autre lien" class="icon">
+            <a href="https://example.com" target="_blank">Mon site web</a>
         </div>
     </div>
 </body>
