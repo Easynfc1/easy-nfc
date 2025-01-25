@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop Profile</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            background: #2c2c2c;
+            color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid #d4a373;
+        }
+        .info {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .info a {
+            color: #d4a373;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .info a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            margin-right: 12px;
+            vertical-align: middle;
+            filter: invert(1);
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #d4a373;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Barber Shop Profile</div>
+        <img src="barber_profile.jpg" alt="Barber Shop Photo" class="profile-photo">
+        <div class="info">
+            <img src="icons/user.png" alt="Nom" class="icon">
+            <span>Barber Shop Deluxe</span>
+        </div>
+        <div class="info">
+            <img src="icons/phone.png" alt="Téléphone" class="icon">
+            <a href="tel:+123456789">+212 6 12 34 56 78</a>
+        </div>
+        <div class="info">
+            <img src="icons/email.png" alt="Email" class="icon">
+            <a href="mailto:barber@example.com">barber@example.com</a>
+        </div>
+        <div class="info">
+            <img src="icons/location.png" alt="Adresse" class="icon">
+            <span>123 Avenue du Style, Casablanca</span>
+        </div>
+        <div class="info">
+            <img src="icons/instagram.png" alt="Instagram" class="icon">
+            <a href="https://instagram.com/barbershopdeluxe" target="_blank">@barbershopdeluxe</a>
+        </div>
+        <div class="info">
+            <img src="icons/link.png" alt="Website" class="icon">
+            <a href="https://barbershopdeluxe.com" target="_blank">Visitez notre site</a>
+        </div>
+    </div>
+</body>
+</html>
