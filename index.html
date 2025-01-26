@@ -5,45 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil NFC</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #edf2f7;
+            color: #2d3748;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
         .container {
-            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             max-width: 400px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
         .profile-photo {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 20px;
-            border: 3px solid #007BFF;
+            margin-bottom: 20px;
+            border: 4px solid #3182ce;
         }
+
         .info {
-            margin: 10px 0;
-            font-size: 18px;
+            margin: 15px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        .info img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+
         .info a {
-            color: #007BFF;
+            color: #3182ce;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
+
         .info a:hover {
-            text-decoration: underline;
-        }
-        .icon {
-            margin-right: 10px;
-            vertical-align: middle;
+            color: #2b6cb0;
         }
     </style>
 </head>
@@ -51,23 +76,23 @@
     <div class="container">
         <img src="profile.jpg" alt="Photo de profil" class="profile-photo">
         <div class="info">
-            <img src="icons/user.png" alt="Nom" class="icon">
+            <img src="icons/user.png" alt="Nom">
             <span>Nom Prénom</span>
         </div>
         <div class="info">
-            <img src="icons/phone.png" alt="Téléphone" class="icon">
+            <img src="icons/phone.png" alt="Téléphone">
             <a href="tel:+123456789">+123456789</a>
         </div>
         <div class="info">
-            <img src="icons/email.png" alt="Email" class="icon">
+            <img src="icons/email.png" alt="Email">
             <a href="mailto:email@example.com">email@example.com</a>
         </div>
         <div class="info">
-            <img src="icons/instagram.png" alt="Instagram" class="icon">
+            <img src="icons/instagram.png" alt="Instagram">
             <a href="https://instagram.com/username" target="_blank">@username</a>
         </div>
         <div class="info">
-            <img src="icons/link.png" alt="Autre lien" class="icon">
+            <img src="icons/link.png" alt="Mon site web">
             <a href="https://example.com" target="_blank">Mon site web</a>
         </div>
     </div>
