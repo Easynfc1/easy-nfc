@@ -1,100 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil NFC</title>
+    <title>Barbershop</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #edf2f7;
-            color: #2d3748;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
+            color: #333;
         }
-
-        .container {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .container:hover {
-            transform: translateY(-5px);
-        }
-
-        .profile-photo {
-            width: 120px;
-            height: 120px;
+        .logo {
+            margin: 20px 0;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 4px solid #3182ce;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
         }
-
-        .info {
-            margin: 15px 0;
-            font-size: 16px;
+        .logo img {
+            width: 170px; /* Taille ajustée de l'image */
+            height: 170px;
+            object-fit: contain; /* Ajuste l'image sans déformation */
+            border-radius: 70%; /* Si tu veux un effet supplémentaire */
+        }
+        .name {
+            font-family: 'Lobster', cursive; /* Belle police personnalisée */
+            font-size: 24px;
+            color: #555;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .contact a {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .info img {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
-        }
-
-        .info a {
-            color: #3182ce;
+            width: 250px;
+            padding: 10px 20px;
+            margin: 10px auto;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .info a:hover {
-            color: #2b6cb0;
+        .contact a img {
+            width: 16px; /* Réduction de la taille des icônes */
+            height: 16px;
+            margin-right: 8px; /* Espace entre l'icône et le texte */
+        }
+        /* Style spécifique pour chaque lien */
+        .contact .instagram {
+            background-color: #E4405F; /* Couleur Instagram */
+            color: white;
+        }
+        .contact .facebook {
+            background-color: #4267B2; /* Couleur Facebook */
+            color: white;
+        }
+        .contact .phone {
+            background-color: #34A853; /* Couleur Téléphone */
+            color: white;
+        }
+        /* Effet au survol */
+        .contact a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .menu {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu h2 {
+            text-align: center;
+            color: #555;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu ul li:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="profile.jpg" alt="Photo de profil" class="profile-photo">
-        <div class="info">
-            <img src="icons/user.png" alt="Nom">
-            <span>Nom Prénom</span>
-        </div>
-        <div class="info">
-            <img src="icons/phone.png" alt="Téléphone">
-            <a href="tel:+123456789">+123456789</a>
-        </div>
-        <div class="info">
-            <img src="icons/email.png" alt="Email">
-            <a href="mailto:email@example.com">email@example.com</a>
-        </div>
-        <div class="info">
-            <img src="icons/instagram.png" alt="Instagram">
-            <a href="https://instagram.com/username" target="_blank">@username</a>
-        </div>
-        <div class="info">
-            <img src="icons/link.png" alt="Mon site web">
-            <a href="https://example.com" target="_blank">Mon site web</a>
-        </div>
+    <div class="logo">
+        <img src="./Barber/logo.png" alt="Logo Barbershop">
+    </div>
+    <div class="name">
+        youssef_lamkataa <!-- Remplace par le nom et prénom -->
+    </div>
+    <div class="contact">
+        <!-- Bouton Instagram -->
+        <a href="https://www.instagram.com/votrecompte" target="_blank" class="instagram">
+            <img src="./Barber/instagram.png" alt="Logo Instagram">
+            Suivez-nous sur Instagram
+        </a>
+        <!-- Bouton Facebook -->
+        <a href="https://www.facebook.com/votrecompte" target="_blank" class="facebook">
+            <img src="./Barber/facebook.png" alt="Logo Facebook">
+            Suivez-nous sur Facebook
+        </a>
+        <!-- Bouton Téléphone -->
+        <a href="tel:0600000000" class="phone">
+            <img src="./Barber/phone.png" alt="Logo Téléphone">
+            Appelez-nous : 06 00 00 00 00
+        </a>
+
+    <div class="menu">
+        <h2>Menu des Tarifs</h2>
+        <ul>
+            <li>
+                <span>Coupe Classique</span>
+                <span>15€</span>
+            </li>
+            <li>
+                <span>Coupe + Barbe</span>
+                <span>25€</span>
+            </li>
+            <li>
+                <span>Rasage Complet</span>
+                <span>20€</span>
+            </li>
+            <li>
+                <span>Entretien de la Barbe</span>
+                <span>10€</span>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
