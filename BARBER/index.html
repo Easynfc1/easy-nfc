@@ -28,14 +28,55 @@
             font-weight: bold;
             color: #fff;
         }
-        .contact {
+        .logo img {
+            width: 170px; /* Taille ajustée de l'image */
+            height: 170px;
+            object-fit: contain; /* Ajuste l'image sans déformation */
+            border-radius: 70%; /* Si tu veux un effet supplémentaire */
+        }
+        .name {
+            font-family: 'Lobster', cursive; /* Belle police personnalisée */
+            font-size: 24px;
+            color: #555;
+            margin: 10px 0;
             text-align: center;
-            margin: 20px 0;
         }
         .contact a {
-            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            padding: 10px 20px;
+            margin: 10px auto;
             text-decoration: none;
+            font-size: 16px;
             font-weight: bold;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact a img {
+            width: 16px; /* Réduction de la taille des icônes */
+            height: 16px;
+            margin-right: 8px; /* Espace entre l'icône et le texte */
+        }
+        /* Style spécifique pour chaque lien */
+        .contact .instagram {
+            background-color: #E4405F; /* Couleur Instagram */
+            color: white;
+        }
+        .contact .facebook {
+            background-color: #4267B2; /* Couleur Facebook */
+            color: white;
+        }
+        .contact .phone {
+            background-color: #34A853; /* Couleur Téléphone */
+            color: white;
+        }
+        /* Effet au survol */
+        .contact a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         .menu {
             width: 80%;
@@ -66,13 +107,28 @@
 </head>
 <body>
     <div class="logo">
-        Logo
+        <img src="./Barber/logo.png" alt="Logo Barbershop">
+    </div>
+    <div class="name">
+        youssef_lamkataa <!-- Remplace par le nom et prénom -->
     </div>
     <div class="contact">
-        <p><a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-        <p>📞 Téléphone : 06 00 00 00 00</p>
-        <p>📧 Email : barbershop@email.com</p>
-    </div>
+        <!-- Bouton Instagram -->
+        <a href="https://www.instagram.com/votrecompte" target="_blank" class="instagram">
+            <img src="./Barber/instagram.png" alt="Logo Instagram">
+            Suivez-nous sur Instagram
+        </a>
+        <!-- Bouton Facebook -->
+        <a href="https://www.facebook.com/votrecompte" target="_blank" class="facebook">
+            <img src="./Barber/facebook.png" alt="Logo Facebook">
+            Suivez-nous sur Facebook
+        </a>
+        <!-- Bouton Téléphone -->
+        <a href="tel:0600000000" class="phone">
+            <img src="./Barber/phone.png" alt="Logo Téléphone">
+            Appelez-nous : 06 00 00 00 00
+        </a>
+
     <div class="menu">
         <h2>Menu des Tarifs</h2>
         <ul>
